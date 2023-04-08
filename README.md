@@ -1,5 +1,6 @@
 # PasswordGenerator
  Still under works.
+ * It is best if the files are in the same directory
 
 ## Things I want to add:
 * The ability to get automatically copied into the clipboard (is that possible? No idea).
