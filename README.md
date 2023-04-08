@@ -1,5 +1,5 @@
 # PasswordGenerator
-still under works.
+ Still under works.
 
 # Things I want to add:
   1.The ability to get automatically copied into the clipboard (is that possible? No idea).
