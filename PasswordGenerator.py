@@ -1,25 +1,24 @@
 
 '''
-// A python password geenrator
+// A python password generator.
 Written on 7th April, 2023.
 '''
 
 import random
 
 print("How long do you want your password to be?")
-length = int(input("Choose up to 64 characters: "))
+length = int(input("Choose up to 128 characters: "))
 
-# Making sure the length is equal or less than 64.
-if length >64 :
-    length = 64
-    print("\nSince you wrote a number higher than 64, I'll take the length as 64 by default.")
+# Making sure the length is equal or less than 128.
+if length > 128 :
+    length = 128
+    print("Since you wrote a number higher than 128, I'll take the length as 128 by default.\n")
 
-#creating the  lists.
 alphabet = ('abcdefghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYZ')
 numbers = ('0123456789')
 signs = ('!@#$%^&*')
 
-# Giving the lists a name.
+# Creating the lists.
 alpha = list(alphabet)
 num = list(numbers)
 signlist = list(signs)
@@ -30,8 +29,7 @@ password = random.choice(mainlist)
 
 # tbh there is probably a better and more efficient way to do this.
 while len(password) != length :
-    if len(password) != length:
-            password =  password + random.choice(mainlist)
-            if len(password) == length:
-                print(password)
-                print("Here you go!")
+    password =  password + random.choice(mainlist)
+    if len(password) == length:
+        print(password)
+        print("Here you go!")
