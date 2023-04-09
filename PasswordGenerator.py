@@ -27,7 +27,7 @@ signlist = list(signs)
 mainlist = alpha + num + signlist
 password = random.choice(mainlist)
 
-# tbh there is probably a better and more efficient way to do this.
+# tbh there are probably better and more efficient ways to do this.
 while len(password) != length :
     password =  password + random.choice(mainlist)
     if len(password) == length:
